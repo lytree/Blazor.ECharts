@@ -171,5 +171,8 @@ public class NameTextStyle
     /// </summary>
     public object Rich { set; get; }
 
+    /// <summary>
+    /// 富文本样式是否继承普通文本样式。
+    /// </summary>
     public bool? RichInheritPlainLabel { get; set; }
 }
