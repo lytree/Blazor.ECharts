@@ -67,7 +67,7 @@ namespace Blazor.ECharts.Options
         /// <summary>
         /// 整体（包括 text 和 subtext）的水平对齐。
         /// </summary>
-        public Align? TextVerticalAlign { set; get; }
+        public VerticalAlign? TextVerticalAlign { set; get; }
 
         /// <summary>
         /// 是否触发事件。

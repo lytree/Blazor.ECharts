@@ -23,10 +23,14 @@ namespace Blazor.ECharts.Options
         public Location? NameLocation { set; get; }
 
         /// <summary>
+        /// 坐标轴名称的文字样式。
+        /// </summary>
+        public NameTextStyle NameTextStyle { set; get; }
+
+        /// <summary>
         /// 坐标轴名称显示位置。
         /// </summary>
         public object NameGap { set; get; }
-
 
         /// <summary>
         /// 是否是反向坐标轴
@@ -92,7 +96,7 @@ namespace Blazor.ECharts.Options
         public bool? Silent { set; get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool? Scale { set; get; }
 
@@ -126,7 +130,6 @@ namespace Blazor.ECharts.Options
     }
     public record XAxis : Axis
     {
-
         /// <summary>
         /// x 轴的位置。
         /// </summary>
@@ -134,17 +137,19 @@ namespace Blazor.ECharts.Options
     }
     public record YAxis : Axis
     {
-
         /// <summary>
         /// y 轴的位置。
         /// </summary>
         public PositionY? Position { set; get; }
     }
+
     public class AxisTick
     {
         public bool? AlignWithLabel { set; get; }
+
         public bool? Show { set; get; }
     }
+
     public record AxisLabel
     {
         /// <summary>
